@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body {
+    background-image: linear-gradient(to right, rgb(17, 15, 15),black);
+    height:600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-image: url(1.png);
+    background-repeat: no-repeat;
+    background-size: 320px;
+    background-position: 950px top;
+    background-color: black;
+    border:0.5px solid transparent;
+    border-radius: 10px;
+    opacity: 0.5;
+    height: 90%;
+    width: 98%;
+    transition: all 2s 0s ease-in;
+    position: relative;
+    border: 1px,solid transparent;
+    animation-name: line;
+    animation-duration: 8s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    
+
+}
+@keyframes line {
+
+    0%{
+        border-left-color:goldenrod ;
+    }
+    40%{
+        border-left-color:transparent ;
+        border-bottom-color:goldenrod ;
+        
+
+    }
+    60%{
+        border-bottom-color:transparent ;
+        border-right-color:goldenrod ;
+        border-top-color:goldenrod ;
+
+
+    }
+    80%{
+        border-right-color:transparent ;
+        border-top-color:goldenrod ;
+
+    }
+    100%{
+        border-top-color:transparent ;
+        border-left-color:goldenrod ;
+
+    }
+    
+}
+.container:hover{
+    opacity: 1;
+    background-size: 325px;
+    /* border:0.2px solid rgba(187, 144, 35, 0.384) ; */
+
+}
+
+
+.header{
+    background-color: rgba(39, 37, 37, 0.205);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px  250px 10px 0px;
+    margin: 5px 5px;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    
+}
+
+.logo{
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 40px;
+    letter-spacing: 1.4px;
+    transition: all 1s 0s ease;
+
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+ul a {
+    color:rgba(255, 255, 255, 0.397);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    border:0.5px solid transparent;
+    transition: all 2s 0s ease;
+}
+ul a:hover{
+    color: white;
+    font-size: 21px;
+    border:0.5px solid goldenrod;
+    border-radius: 20px;
+    background-color: rgba(39, 37, 37, 0.644);
+}
+.section{
+    height: 300px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 50px;
+    margin: 20px 50px ;
+}
+.name{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+
+}
+h1{
+    color: goldenrod;
+    font-weight: bold;
+    padding: 10px 0px;
+    font-size: 60px;
+    letter-spacing: 3px;
+}
+.self{
+    color: white;
+    font-size: 20px;
+    font-weight:500;
+    letter-spacing: 1.4px;
+    line-height: 25px;
+}
+button{
+    padding: 10px 15px;
+    margin-top: 20px ;
+    color: rgba(255, 255, 255, 0.575);
+    background-color: rgba(39, 37, 37, 0.048);
+    font-size: 20px;
+    border-radius: 10px;
+    border:0.5px solid goldenrod;
+    font-weight: bold;
+    transition: all 1s 0s ease;
+}
+button:hover{
+    border:0.5px solid goldenrod;
+    background-color: gold;
+    color: black;
+    border-radius: 10px;
+    font-weight: bold;
+    transform: scale(1.1);
+    cursor: pointer;
+}
